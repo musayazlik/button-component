@@ -3,21 +3,21 @@ import styles from "./button.module.scss";
 import { IButtonProps } from "./type";
 
 /**
- * Button bileşeni, düğme oluşturmak için kullanılır.
  *
- * @param {React.ReactNode} children - Düğme içeriği
- * @param {boolean} [isIconOnly] - Eğer düğme yalnızca bir simge içeriyorsa
- * @param {"primary" | "secondary" | "tertiary"} [color] - Düğmenin rengi
- * @param {"xs" | "sm" | "md" | "lg"} [size] - Düğmenin boyutu
- * @param {React.ReactNode} [endContent] - Düğmenin sonunda yer alacak içerik
- * @param {React.ReactNode} [startContent] - Düğmenin başında yer alacak içerik
- * @param {"xs" | "sm" | "md" | "lg" | "full"} [radius] - Düğmenin köşe yarıçapı
- * @param {boolean} [fullWidth] - Düğmenin tam genişlikte olup olmayacağı
- * @param {() => void} [onClick] - Düğme tıklandığında çağrılacak işlev
- * @param {"button" | "submit" | "reset"} [type] - Düğmenin tipi
- * @param {boolean} [disabled] - Düğmenin etkin olup olmadığı
- * @param {string} [className] - Düğmenin sınıf adı
- * @returns {React.ReactNode} - Oluşturulan düğme bileşeni
+ * The Button component is used to create buttons.
+ * @param {React.ReactNode} children - Content of the button
+ * @param {boolean} [isIconOnly] - If the button contains only an icon
+ * @param {"primary" | "secondary" | "tertiary"} [color] - The color of the button
+ * @param {"xs" | "sm" | "md" | "lg"} [size] - The size of the button
+ * @param {React.ReactNode} [endContent] - Content at the end of the button
+ * @param {React.ReactNode} [startContent] - Content at the beginning of the button
+ * @param {"xs" | "sm" | "md" | "lg" | "full"} [radius] - The radius of the button
+ * @param {boolean} [fullWidth] - If the button should be full width
+ * @param {() => void} [onClick] - Function to be called when the button is clicked
+ * @param {"button" | "submit" | "reset"} [type] - The type of the button
+ * @param {boolean} [disabled] - If the button is disabled
+ * @param {string} [className] - The class name of the button
+ * @returns {React.ReactNode} - The generated button component
  * @example
  */
 
