@@ -18,6 +18,7 @@ import { IButtonProps } from "./type";
  * @param {boolean} [disabled] - Düğmenin etkin olup olmadığı
  * @param {string} [className] - Düğmenin sınıf adı
  * @returns {React.ReactNode} - Oluşturulan düğme bileşeni
+ * @example
  */
 
 export default function Button({
