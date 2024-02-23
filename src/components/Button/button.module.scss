@@ -1,0 +1,179 @@
+/* Genel stil */
+.button {
+  display: flex; /* İçeriği yatay hizala */
+  gap: 8px; /* İçerikler arasında boşluk bırak */
+  align-items: center; /* Dikeyde ortala */
+  justify-content: center; /* Yatayda ortala */
+  font-weight: 500; /* Yazı kalınlığı */
+  text-align: center; /* Metni ortala */
+  cursor: pointer; /* Fare imlecini göster */
+}
+
+/* Tam genişlik stil */
+.fullWidth {
+  width: 100%; /* Tam genişlik */
+}
+
+/* Boyutlar */
+.size-xs {
+  font-size: 12px;
+  padding: 12px 24px;
+}
+.size-sm {
+  font-size: 14px;
+  padding: 16px 28px;
+}
+.size-md {
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.size-lg {
+  font-size: 18px;
+  padding: 20px 32px;
+}
+
+/* Simge boyutları */
+.icon-only-xs {
+  padding: 12px;
+}
+.icon-only-sm {
+  padding: 16px;
+}
+.icon-only-md {
+  padding: 20px;
+}
+.icon-only-lg {
+  padding: 24px;
+}
+
+/* Köşe yarıçapları */
+.radius-xs {
+  border-radius: 4px;
+}
+.radius-sm {
+  border-radius: 6px;
+}
+.radius-md {
+  border-radius: 8px;
+}
+.radius-lg {
+  border-radius: 12px;
+}
+.radius-full {
+  border-radius: 9999px;
+}
+
+/* Sol tarafta simge içeren düğme boyutları */
+.icon-left-xs {
+  padding: 12px 24px 12px 20px;
+}
+.icon-left-sm {
+  padding: 16px 28px 16px 24px !important;
+}
+.icon-left-md {
+  padding: 16px 32px 16px 28px !important;
+}
+.icon-left-lg {
+  padding: 20px 32px 20px 28px !important;
+}
+
+/* Sağ tarafta simge içeren düğme boyutları */
+.icon-right-xs {
+  padding: 12px 20px 12px 24px;
+}
+.icon-right-sm {
+  padding: 16px 24px 16px 28px;
+}
+.icon-right-md {
+  padding: 16px 28px 16px 32px;
+}
+.icon-right-lg {
+  padding: 20px 28px 20px 32px;
+}
+
+/* İki yönlü içerik boyutları */
+.content-both-xs {
+  padding: 12px 20px 12px 20px;
+}
+.content-both-sm {
+  padding: 16px 24px 16px 24px;
+}
+.content-both-md {
+  padding: 16px 28px 16px 28px;
+}
+.content-both-lg {
+  padding: 20px 28px 20px 28px;
+}
+
+/* Düğme varyantları */
+.primary {
+  @apply duration-300; /* Animasyon süresi */
+  background-color: #1f67f3; /* Arkaplan rengi */
+  color: white; /* Metin rengi */
+  cursor: pointer; /* Fare imlecini göster */
+}
+
+.secondary {
+  @apply duration-300; /* Animasyon süresi */
+  background-color: #ffffff; /* Arkaplan rengi */
+  border: 1px solid #1f67f3; /* Kenarlık rengi */
+  color: #1f67f3; /* Metin rengi */
+  cursor: pointer; /* Fare imlecini göster */
+}
+
+.tertiary {
+  @apply duration-300; /* Animasyon süresi */
+  background-color: #ffffff; /* Arkaplan rengi */
+  color: #1f67f3; /* Metin rengi */
+  cursor: pointer; /* Fare imlecini göster */
+}
+
+/* Hover, Active, Disabled ve Focus durumları için özel stiller */
+.primary:hover {
+  background-color: #3b83ef;
+}
+.primary:active {
+  background-color: #1f67f3;
+}
+.primary:disabled {
+  background-color: #f1f1f1;
+  color: #727374;
+  cursor: not-allowed;
+}
+.primary:focus {
+  box-shadow: 0 0 0 2px #241ff3;
+}
+
+.secondary:hover {
+  background-color: #1f67f3;
+  color: #ffffff;
+}
+.secondary:active {
+  background-color: #ffffff;
+  color: #1f67f3;
+}
+.secondary:disabled {
+  background-color: #ffffff;
+  color: #b9b9b9;
+  border: 1px solid #b9b9b9;
+}
+.secondary:focus {
+  box-shadow: 0 0 0 2px #241ff3;
+}
+
+.tertiary:hover {
+  color: #3b83ef;
+}
+.tertiary:active {
+  background-color: #ffffff;
+  color: #1f67f3;
+}
+.tertiary:disabled {
+  background-color: #ffffff;
+  color: #b9b9b9;
+  cursor: not-allowed;
+}
+.tertiary:focus {
+  box-shadow: 0 0 0 2px #241ff3;
+  color: #1f67f3;
+}
